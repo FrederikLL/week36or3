@@ -3,6 +3,7 @@ Week 3 slash 36
 day 1:
 https://fredll.dk/rest-jpa-devops-fuck/
 Problems with the movie database but the deployment is active on above link and i build it with travis ci aswell.
+Should be fixed now by using startcode database.
 
 day 2:
 Too many differences in my code and the shared project, couldnt get it to work.
