@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div id="1">div1 longtexto</div>
+        <div id="2">div2</div>
+        <div id="3">div3</div>
+        <button onclick="colors()">Click me</button>
+
+    </body>
+    <script>
+    var e = document.getElementsByTagName("div");
+                  e[0].style.color="purple";
+                  e[1].style.color="green";
+                  e[2].style.color="orange";                 
+    function colors(){
+                document.getElementById("1").style.color = "red";
+                document.getElementById("2").style.color = "blue";
+                document.getElementById("3").style.color = "yellow";
+        }
+        </script>
+</html>

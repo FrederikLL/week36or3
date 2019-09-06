@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <style>.mydiv {width: 25px; height: 25px;background-color:yellow; margin:1px;}</style>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="1" class="mydiv">lol</div>
+        <div id="2" class="mydiv">lol</div>
+        <div id="3" class="mydiv">lol</div>
+        <div id="4" class="mydiv">lol</div>
+        <div id="5" class="mydiv">lol</div>
+        <div id="6" class="mydiv">lol</div>
+        <div id="7" class="mydiv">lol</div>
+        <div id="8" class="mydiv">lol</div>
+        <div id="9" class="mydiv">lol</div>
+        <div id="10" class="mydiv">lol</div>
+        <div id="11" class="mydiv">lol</div>
+        <div id="12" class="mydiv">lol</div>
+        <div id="outer"> lol</div>
+        
+        <button onclick="thistest()">Click me 3 this</button>
+        <button onclick="hi()">Click me</button>
+        <button onclick="hi2()">Click me too</button>
+    </body>
+    <script>
+        function hi(){
+            console.log("Hi from 1!");
+        //document.getElementById("1");
+        }
+        
+        function hi2(){
+            console.log("Hi from 2!");
+        }
+        
+        function thistest(){
+            console.log(this);
+        }
+//        var boys = ["Lars", "Jan", "Peter", "Bo", "Frederik"];
+//        
+//        var app = document;
+//        app.innerHTML = '<ul>' + boys.map(function (item){
+//        return '<li>' + item + '</li>';
+//        }).join()+ '<ul>';
+//        app;
+    </script>
+</html>
