@@ -17,6 +17,7 @@ The Javascript function assignment is in the jsFunctions.js file.
 Day 4:
 DOM manipulation assignment is in the jshtmlday4 project. the first assignment
 is in the index.html file, and the rest of what i completed is in the opgave2.html file
+The fetch data assignment is in the fetchpage.html file but i never got it to work properly.
 
 Day 5:
 ??
