@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+<!--        <div>TODO write content</div>-->
+        
+        User id below 10 <input type="text" id ="1" name="user"><br>
+        <ul id ="users"></ul>
+        <button onclick="fetch">Get user</button>
+        
+        
+    </body>
+    <script>
+    function createNode(element){
+        return document.createElement(element);
+    }
+    
+    function append(parent, el){
+        return parent.appendChild(el);
+    }
+    
+    const ul = document.getElementById('users');
+    const url2 = "https://jsonplaceholder.typicode.com/users/";
+    
+    fetch(url2)
+    .then(res => res.json())
+    
+    .catch(function(data){
+        let users = data.results;
+        return users.map(function(user){
+            let li = createNode('li');
+            let span = createNode('span');
+            span.innerhtml = '${user.name} ${user.username}';
+            append(li,span);
+            append(ul,li);
+        })
+                .catch(function(error){
+                    console.log(error);
+        });
+    });
+    
+    
+//    fetch(url)
+//  .then(res => res.json()) //in flow1, just do it
+//  .then(data => {
+//   // Inside this callback, and only here, the response data is available
+//   console.log("data",data);
+//  /* data now contains the response, converted to JavaScript
+//     Observe the output from the log-output above
+//     Now, just build your DOM changes using the data*/       
+//});
+
+    
+//    function click(){
+//        let url = "https://jsonplaceholder.typicode.com/users/" + document.getElementById("1");
+//            fetch(url)
+//  .then(res => res.json()) //in flow1, just do it
+//  .then(data => {
+//   // Inside this callback, and only here, the response data is available
+//   console.log("data",data);
+//  /* data now contains the response, converted to JavaScript
+//     Observe the output from the log-output above
+////     Now, just build your DOM changes using the data*/       
+////});
+//        
+//    }
+//    
+    </script>
+</html>
